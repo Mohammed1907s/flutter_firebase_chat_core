@@ -43,6 +43,10 @@ class FirebaseChatCore {
     config = firebaseChatCoreConfig;
   }
 
+  void setUser(User user) {
+    firebaseUser = user;
+  }
+
   /// Creates a chat group room with [users]. Creator is automatically
   /// added to the group. [name] is required and will be used as
   /// a group name. Add an optional [imageUrl] that will be a group avatar
